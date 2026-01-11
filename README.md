@@ -2,6 +2,28 @@
 
 本人在原作者基础上进行了修改，以使其能实现对Google学术、Web of Science、ScienceDirect等根绝关键词推送文献服务的订阅邮件总结，现有开源项目主要针对arXiv预发表网站进行跟踪总结，航空航天相关arXiv使用较少，故对原作者项目进行修改以满足自己学习科研使用。
 
+得到的文献汇总示例如下：
+
+邮件 1：Aerospace Science and Technology: Alert 10 January
+发件人：ScienceDirect Message Center sciencedirect@notification.elsevier.com
+摘要： 期刊《Aerospace Science and Technology》新增7篇论文：
+
+Soot formation characteristics of the RP-3 aviation kerosene/ oxygen laminar premixed flame under certain fuel-rich combustion 作者：Shuqing Fu, Wen Zeng, Qingjun Zhao, Wei Zhao, Long Hao, Bin Hu 发表日期：10 January 2026 类型：Research article
+
+Mechanism of coupled energy transfer and pressure drop in cryogenic propellant sloshing through improved phase change modeling 作者：Jian Yang, Yanzhong Li, Lei Wang, Fushou Xie, Cui Li 发表日期：10 January 2026 类型：Research article
+
+Nonlinear flutter of tandem curved panels subject to supersonic flows 作者：Naitian Hu, Hao Liu, Penglin Gao, Hao Gao, Yegao Qu, Guang Meng 发表日期：10 January 2026 类型：Research article
+
+Multidisciplinary Design Analysis and Optimization of Aero-assisted Orbital Transfer Vehicle 作者：Jiliang Xiao, Zhaoyan Lu, Shuanghou Deng, Tianhang Xiao, Dong Han 发表日期：09 January 2026 类型：Research article
+
+A data-driven airfoil generative design method and its application in compressor throughflow optimization design 作者：Shuaipeng Liu, Shaojuan Geng, Hongwu Zhang 发表日期：09 January 2026 类型：Research article
+
+Toward High-Efficiency Design for Jet-Based Flow Control in High-Pressure Turbine Vanes 作者：Yulei Chen, Weihao Zhang, Yufan Wang, Dongming Huang, Xin Li, Lei Wang 发表日期：09 January 2026 类型：Research article
+
+Cooling efficiency and non-reactive flow characteristics of a tail-cavity air-cooled flameholder 作者：YUANZI WU, GUANGHAI LIU, YUYING LIU 发表日期：09 January 2026 类型：Research article
+
+
+
 # 个人AI邮件总结助手 (Email Summary Bot)
 
 这是一个基于GitHub Actions的自动化工具，它能每日定时读取你指定的邮箱文件夹，使用**DeepSeek**的语言模型进行智能总结，并将一份邮件汇总报告发送到你的另一个邮箱。

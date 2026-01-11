@@ -62,6 +62,7 @@ SYSTEM_PROMPT = """
 IMAP_EMAIL = os.environ.get("IMAP_EMAIL")
 IMAP_AUTH_CODE = os.environ.get("IMAP_AUTH_CODE")
 IMAP_SERVER = os.environ.get("IMAP_SERVER")
+IMAP_PORT = int(os.environ.get("IMAP_PORT", 993))
 TARGET_FOLDER = os.environ.get("TARGET_FOLDER")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
@@ -84,7 +85,7 @@ def get_emails_from_target_date(target_date):
     beijing_tz = timezone(timedelta(hours=8))
 
     try:
-        conn = imaplib.IMAP4_SSL(IMAP_SERVER)
+        conn = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
         conn.login(IMAP_EMAIL, IMAP_AUTH_CODE)
         conn.select(f'"{TARGET_FOLDER}"')
         
@@ -237,7 +238,7 @@ def send_email_notification(summary_md, date_for_subject):
 # 主执行入口
 # ==============================================================================
 if __name__ == "__main__":
-    required_vars = ["IMAP_EMAIL", "IMAP_AUTH_CODE", "TARGET_FOLDER", "DEEPSEEK_API_KEY", 
+    required_vars = ["IMAP_EMAIL", "IMAP_AUTH_CODE", "IMAP_SERVER", "IMAP_PORT", "TARGET_FOLDER", "DEEPSEEK_API_KEY", 
                      "SENDER_EMAIL", "SENDER_AUTH_CODE", "RECEIVER_EMAIL", "SMTP_SERVER", "SMTP_PORT"]
     if not all(os.environ.get(var) for var in required_vars):
         print("错误：一个或多个必要的环境变量未设置。")

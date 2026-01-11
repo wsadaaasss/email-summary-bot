@@ -29,6 +29,7 @@ jobs:
           IMAP_EMAIL: ${{ secrets.IMAP_EMAIL }}
           IMAP_AUTH_CODE: ${{ secrets.IMAP_AUTH_CODE }}
           IMAP_SERVER: ${{ secrets.IMAP_SERVER }}
+          IMAP_PORT: ${{ secrets.IMAP_PORT }}
           TARGET_FOLDER: ${{ secrets.TARGET_FOLDER }}
           
           # 用于调用DeepSeek

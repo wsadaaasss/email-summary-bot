@@ -24,6 +24,7 @@
     - `IMAP_EMAIL`: 你的邮箱地址。
     - `IMAP_AUTH_CODE`: 上述邮箱的IMAP授权码。
     - `IMAP_SERVER`: 你邮箱的IMAP服务器地址 (例如 `imap.qq.com`)。
+    - `IMAP_PORT`: IMAP服务器的SSL端口 (例如 `993`)。
 
 - **② DeepSeek API密钥**
     - `DEEPSEEK_API_KEY`: 前往 [DeepSeek开放平台](https://platform.deepseek.com/api_keys) 创建你的API密钥。
@@ -49,6 +50,7 @@
     - `IMAP_EMAIL`
     - `IMAP_AUTH_CODE`
     - `IMAP_SERVER`
+    - `IMAP_PORT`
     - `TARGET_FOLDER`
     - `DEEPSEEK_API_KEY`
     - `SENDER_EMAIL`

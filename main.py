@@ -275,7 +275,7 @@ def summarize_single_batch(client, email_batch, start_index):
         return f"--- \n\n#### 处理邮件 {start_index} 到 {start_index + len(email_batch) - 1} 时出错\n- **错误详情**: `{e}`\n\n---"
 
 
-def summarize_with_llm(email_list, batch_size=25):
+def summarize_with_llm(email_list, batch_size=5):
     """
     协调分批处理邮件列表的总结任务。
     """
